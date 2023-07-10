@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
 
 // eslint-disable-next-line react/prop-types
 const ServiceCard = ({ index, title, icon }) => {
@@ -53,4 +54,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, 'about');
